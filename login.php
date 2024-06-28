@@ -12,12 +12,12 @@
         <div class="form-outline">
             <!-- email -->
             <div class="input-line">
-                <input type="email" name="email-username"id="email-username" class="form-control" placeholder="Email or Username">
+                <input type="email" name="email-username"id="email-username" class="form-control" placeholder="Email or Username" required>
             </div>
             <br>
             <!-- password -->
             <div class="input-line">
-                <input type="password" name="password-login" id="password=login" class="form-control" placeholder="Password">
+                <input type="password" name="password-login" id="password-login" class="form-control" placeholder="Password" required>
             </div>
             <br>
 <!-- remember me and forgot password -->
@@ -35,16 +35,17 @@
 
         
             <div id="button">
-                <button type="button">Sign In</button>
+                <input type="submit" id="sign-in">
             </div>
 
             <br>
 
             <div class="column">
-                Not a member? &nbsp; <a href="signup.php">Register!</a>
+                Not a member?&nbsp;<a href="signup.php"> Register!</a>
             </div>
         </div>
     </form>
+
 </div>
 </body>
 </html>

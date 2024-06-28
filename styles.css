@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    
+    background-color: #001f30;
 }
 
 h3{
@@ -15,7 +15,7 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #2dbef4;
+    background-color: #6baeb0;
     position: sticky;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -40,7 +40,7 @@ li a {
 }
 
 li a:hover{
-    background-color: #76cdec;
+    background-color: #8ec3c5;
 }
 
 #search-bar{
@@ -54,6 +54,6 @@ li a:hover{
 }
 
 .active{
-    background-color: #20a3d3;
+    background-color: #54989b;
 }
 

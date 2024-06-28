@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #001f30;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .container {
@@ -34,6 +34,7 @@ body {
 .column {
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 #button{
@@ -42,7 +43,7 @@ body {
     padding-top: 20px ;
 }
 
-button{
+#sign-in{
     width: 350px;
     height: 40px;
     border-radius: 4px;
@@ -51,15 +52,24 @@ button{
     color: white;
 }
 
-button:hover{
+#sign-in:hover{
     cursor: pointer;
     background-color: #8ec3c5;
 }
 
-button:active {
-   background-color: #54989b;
+#sign-in:active {
+    background-color: #54989b;
 }
 a{
     text-decoration: none;
+    color: #6baeb0;
+}
+
+a:hover{
+    color: #8ec3c5;
+}
+
+a:active{
+    color:#54989b ;
 }
 
