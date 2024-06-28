@@ -1,6 +1,49 @@
-input{
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:  auto;
+
+}
+
+.form-outline {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 50%;
+    width: auto;
+    height: auto;
+}
+
+.input-line {
+
+}
+
+.form-control {
     padding: 10px;
-    width: 400px;
+    width: 350px;
+    height: 23px;
     border: 1px solid #b5b5b5;
+    
+    border-radius: 4px;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px ;
+}
+
+button {
+    width: 350px;
+    height: 40px;
+}
+a{
+    text-decoration: none;
 }
 
