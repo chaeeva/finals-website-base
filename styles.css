@@ -1,9 +1,10 @@
 body{
     margin: 0px;
+    
 }
 
 h3{
-    padding-top: 15px;
+    padding-top: 18px;
     padding-left: 20px;
     padding-right: 40px;
     margin: 0px;
@@ -14,7 +15,7 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #2dbef4;
     position: sticky;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -24,37 +25,35 @@ li {
     float: left;
 }
 
+#login-to-right {
+    float: right;
+    margin-right: 50px;
+}
+
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 16px 18px;
+    padding: 20px 18px;
     text-decoration: none;
     
 }
 
 li a:hover{
-    background-color: #535353d8;
-}
-
-#login-btn{
-    display:block;
-    
-}
-
-#signup-btn{
-    display: block;
+    background-color: #76cdec;
 }
 
 #search-bar{
     border-radius: 25px;
-    width: 200px;
+    border: none;
+    width: 300px;
     height: 30px;
-    margin-top: 8px;
-    margin-left: 20px;
+    margin-top: 14px;
+    margin-left: 100px;
+    margin-right: 20px;
 }
 
 .active{
-    background-color: grey;
+    background-color: #20a3d3;
 }
 

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="LoginSignUpStyle.css">
-    <title>Ez Ticketst</title>
+    <title>Ez Tickets</title>
 </head>
 <body>
 <div class="container">
-    <form action="loginIndex.php">
+    <form action="loginIndex.php" method="post">
         <div class="form-outline">
             <!-- email -->
             <div class="input-line">
@@ -36,6 +36,12 @@
         
             <div id="button">
                 <button type="button">Sign In</button>
+            </div>
+
+            <br>
+
+            <div class="column">
+                Not a member? &nbsp; <a href="signup.php">Register!</a>
             </div>
         </div>
     </form>

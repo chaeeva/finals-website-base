@@ -18,9 +18,8 @@
                 <li><a href="ticketOutlets.php">Ticket Outlets</a></li>
                 <li><a href="ticketPurchase.php">Ticket Purchase</a></li>
                 <li><a href="faqSupport.php">FAQ and Support</a></li>
-                <li><input type="text" placeholder="Search..." id="search-bar"></li>
-                <li><button id="login-btn"><a href="login.php">Login</a></button></li>
-                <li><button id="signup-btn"><a href="signup.php">Sign Up</a></button></li>
+                <li><input type="text" placeholder="   Search..." id="search-bar"></li>
+                <li id="login-to-right"><a href="login.php">Login/Sign Up</a></li>
             </ul>
         </div>
     </div>
