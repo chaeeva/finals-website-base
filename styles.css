@@ -37,6 +37,15 @@ li a:hover{
     background-color: #535353d8;
 }
 
+#login-btn{
+    display:block;
+    
+}
+
+#signup-btn{
+    display: block;
+}
+
 #search-bar{
     border-radius: 25px;
     width: 200px;

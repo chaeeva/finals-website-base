@@ -19,6 +19,8 @@
                 <li><a href="ticketPurchase.php">Ticket Purchase</a></li>
                 <li><a href="faqSupport.php">FAQ and Support</a></li>
                 <li><input type="text" placeholder="Search..." id="search-bar"></li>
+                <li><button id="login-btn"><a href="login.php">Login</a></button></li>
+                <li><button id="signup-btn"><a href="signup.php">Sign Up</a></button></li>
             </ul>
         </div>
     </div>
