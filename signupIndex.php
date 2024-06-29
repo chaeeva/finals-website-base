@@ -16,16 +16,15 @@
         $lname = $_POST['last-name'];
         $number = $_POST['phone-number'];
         
-        require "signupQuery.php";
+        
 
         if($_POST['password-login'] !== $_POST['confirm_password']){
-            echo "Passwords do not match.";
+            echo "<p class='column'>Passwords do not match.</p>";
             exit;
         }
 
         else {
-
-            include "signupQuery.php";
+            require "signupQuery.php";
             exit();
 
         }
