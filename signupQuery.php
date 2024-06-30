@@ -1,37 +1,34 @@
 <?php
-$servername = "localhost";
-$usernameAdmin = "root";
-$passwordAdmin = "danielle69";
-$dbname = "finals_userdata";
+    $host = "localhost";
+    $admin = "root";
+    $adminPassword = "danielle69";
+    $dbname = "finals_userdata";
 
-$connection = new mysqli($servername, $usernameAdmin, $passwordAdmin, $dbname);
+    $connection = new mysqli($host, $admin, $adminPassword, $dbname);
 
-if($connection->connect_errno) {
-    die("Connection failed: ". $connection->connect_error);
-}
-$email = mysqli_real_escape_string($connection, $_POST['email']);
-$username = mysqli_real_escape_string($connection, $_POST['username']);
-$password = mysqli_real_escape_string($connection, $_POST['password-login']);
-$conf_pass = mysqli_real_escape_string($connection, $_POST['confirm_password']);
-$fname = mysqli_real_escape_string($connection, $_POST['first-name']);
-$lname = mysqli_real_escape_string($connection, $_POST['last-name']);
-$number = mysqli_real_escape_string($connection, $_POST['phone-number']);
+    if($connection->connect_error) {
+        die("Connection failed: ". $connection->connect_error);
+    }
 
-$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    $email = mysqli_real_escape_string($connection, $_POST['email']);
+    $username = mysqli_real_escape_string($connection, $_POST['username']);
+    $password = mysqli_real_escape_string($connection, $_POST['password-login']);
+    $firstName = mysqli_real_escape_string($connection, $_POST['first-name']);
+    $lastName = mysqli_real_escape_string($connection, $_POST['last-name']);
+    $phoneNumber = mysqli_real_escape_string($connection, $_POST['phone-number']);
 
-$sql = "INSERT INTO user_data (email, username, first_name, last_name, contact_number, passw) 
-VALUES ('$email', '$username', '$fname', '$lname', '$number', '$hashedPassword')";
+    $sql ="INSERT INTO users(Email, Username, Passw, first_name, last_name, contact_number)
+    VALUES('$email', '$username', '$password', '$firstName', '$lastName', '$phoneNumber')";
 
-if($connection->query($sql) === TRUE) {
-echo "Registration Successful!";
-header("Location:login.php");
-exit();
-}
-else {
-echo "Error: ". $sql. "<br>". $connection->error;
-}
+    if($connection->query($sql) === TRUE) {
+        echo "Registration Successful<br>";
+        echo"<a href='login.php' class='column'> Login Here.</a>";
+    }
 
-$connection->close();
+    else {
+        echo "Error: ". $sql. "<br>". $connection->error;
+    }
 
+    $connection->close();
 
 ?>

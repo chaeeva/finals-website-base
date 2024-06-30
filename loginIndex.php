@@ -10,10 +10,18 @@
             setcookie('username', $emailUsername, time() + 86400 * 30, "/");
             setcookie('password', $password, time() + 86400 * 30, "/");
         }
+
+        // Unset cookies if checkbox is unchecked
+        if($_POST['checkbox'] = false && !empty($_POST['email-username'] && !empty($_POST['password-login']))) {
+            setcookie('username', '', time() - 3600, "/");
+            setcookie('password', '', time() - 3600, "/");
+
+        } 
+        
         // Check if email/username and password are valid
         // Perform database query to authenticate user
         // Redirect to home page if successful
         // Redirect to login page if failed
     } 
-
 ?>
+

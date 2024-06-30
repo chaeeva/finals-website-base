@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="LoginSignUpStyle.css">
-    <title>Ez Ticketst</title>
+    <title>Ez Tickets</title>
 </head>
 <body>
 <div class="container">
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
         <div class="form-outline">
             <!-- email -->
             <div class="input-line">
@@ -45,12 +45,11 @@
             <br>
 <!-- remember me and forgot password -->
             <div id="button">
-                <input type="submit" id="sign-in" value="Create Account">
+                <input type="submit" name="sign-in" id="sign-in" value="Create Account">
             </div>
         </div>
     </form>
-    <?php include 'signupIndex.php';?>
 </div>
-
+<div class="column"><?php include 'signupIndex.php';?></div>
 </body>
 </html>
