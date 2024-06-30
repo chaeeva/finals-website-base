@@ -47,6 +47,12 @@
             <div id="button">
                 <input type="submit" name="sign-in" id="sign-in" value="Create Account">
             </div>
+            <br>
+            <div class="column"><a href="home.php">Click to go back to home.</a></div>
+            <br>
+            <div class="column">
+                Already have an account? &nbsp;<a href="login.php">Login here.</a>
+            </div>
         </div>
     </form>
 </div>

@@ -43,8 +43,11 @@
             <div class="column">
                 Not a member?&nbsp;<a href="signup.php"> Register!</a>
             </div>
+            <br>
+            <div class="column"><a href="home.php">Click to go back.</a></div>
         </div>
     </form>
+    
 
 </div>
 </body>
